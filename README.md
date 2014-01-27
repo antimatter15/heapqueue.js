@@ -1,3 +1,5 @@
+# Heapqueue.JS
+
 This implementation is very loosely based off js-priority-queue
 by Adam Hooper from https://github.com/adamhooper/js-priority-queue
 
@@ -6,6 +8,9 @@ with its require.js dependency and multiple storage strategies
 when all but one were strongly discouraged. So here is a kind of 
 condensed version of the functionality with only the features that
 I particularly needed. 
+
+
+## Usage
 
 Using it is pretty simple, you just create an instance of HeapQueue
 while optionally specifying a comparator as the argument:
@@ -50,3 +55,9 @@ queue.
     heapq.pop() ==> 1
     heapq.pop() ==> 2
     heapq.pop() ==> 3
+
+## Licensing
+
+Like js-priority-queue, I hereby release the source code for this
+project into the Public Domain. That said, it'd be pretty neat to 
+know what this gets used for, if anything.
