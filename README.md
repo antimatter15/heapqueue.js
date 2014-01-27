@@ -10,13 +10,13 @@ I particularly needed.
 Using it is pretty simple, you just create an instance of HeapQueue
 while optionally specifying a comparator as the argument:
 
-  var heapq = new HeapQueue()
+    var heapq = new HeapQueue()
 
-  var customq = new HeapQueue(function(a, b){
-  	// if b > a, return negative
-  	// means that it spits out the smallest item first
-    return a - b
-  })
+    var customq = new HeapQueue(function(a, b){
+    	// if b > a, return negative
+    	// means that it spits out the smallest item first
+      return a - b
+    })
 
 Note that in this case, the default comparator is identical to
 the comparator which is used explicitly in the second queue.
@@ -25,8 +25,8 @@ Once you've initialized the heapqueue, you can plop some new
 elements into the queue with the push method (vaguely reminiscent
 of typical javascript arays)
 
-  heapq.push(42);
-  heapq.push("kitten");
+    heapq.push(42);
+    heapq.push("kitten");
 
 The push method returns the new number of elements of the queue.
 
@@ -37,16 +37,16 @@ other than an number by default.
 
 You can preview the smallest item by using peek.
 
-  heapq.push(-9999)
-  heapq.peek() ==> -9999
+    heapq.push(-9999)
+    heapq.peek() ==> -9999
 
 The useful complement to to the push method is the pop method, 
 which returns the smallest item and then removes it from the
 queue.
 
-  heapq.push(1)
-  heapq.push(2)
-  heapq.push(3)
-  heapq.pop() ==> 1
-  heapq.pop() ==> 2
-  heapq.pop() ==> 3
+    heapq.push(1)
+    heapq.push(2)
+    heapq.push(3)
+    heapq.pop() ==> 1
+    heapq.pop() ==> 2
+    heapq.pop() ==> 3
